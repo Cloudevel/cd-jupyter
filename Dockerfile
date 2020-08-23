@@ -1,6 +1,7 @@
 FROM debian
 RUN apt update
 RUN apt install -y build-essential curl wget git mc curl python3-dev vim sudo
+RUN apt clean
 RUN  wget https://bootstrap.pypa.io/get-pip.py
 RUN python3 get-pip.py
 RUN pip install notebook bash-kernel
