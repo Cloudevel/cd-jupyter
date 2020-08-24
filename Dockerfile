@@ -12,7 +12,7 @@ RUN chown -R oi:oi /opt/oi
 RUN sudo -u oi jupyter notebook --generate-config
 COPY jupyter_notebook_config.json /home/oi/.jupyter/
 EXPOSE 8888
-VOLUME ["/op/oi"]
+VOLUME ["/opt/oi"]
 WORKDIR /opt/io
 USER oi
 CMD jupyter notebook --no-browser --ip=0.0.0.0 --notebook-dir /opt/oi
