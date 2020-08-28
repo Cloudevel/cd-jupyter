@@ -4,7 +4,7 @@ RUN apt install -y curl wget git build-essential mc unzip tree python3-dev vim s
 RUN rm -rf /varl/lib/apt/lists/*
 RUN  wget https://bootstrap.pypa.io/get-pip.py
 RUN python3 get-pip.py
-RUn rm get-pip.py
+RUN rm get-pip.py
 RUN pip install notebook bash-kernel
 RUN python3 -m bash_kernel.install
 RUN mkdir /opt/oi
